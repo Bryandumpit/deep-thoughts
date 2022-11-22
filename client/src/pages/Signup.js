@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+//import hook and query function for mutation think QUERY_THOUGHT or QUERY_USER for mutation
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../utils/mutations';
 
 const Signup = () => {
   const [formState, setFormState] = useState({ username: '', email: '', password: '' });
